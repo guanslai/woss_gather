@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<woss>
+	<gather class="com.briup.client.GatherImpl">
+		<AAA-filePath>src/com/briup/file/radwtmp</AAA-filePath>
+		<nasIp></nasIp>
+	</gather>
+	
+	<logger class="com.briup.util.LoggerImpl">
+		<file></file>
+	</logger>
+	
+	<Back class="com.briup.util.BackUPImpl">
+		<back>src/com/briup/file</back>
+	</Back>
+	 
+	<client class="com.briup.client.ClientImpl">
+	<port>7788</port>
+	<ip>127.0.0.1</ip>
+	</client>
+	
+	<server class="com.briup.server.ServerImpl">
+		<serverport>7788</serverport>
+	</server>
+	
+	
+	<dbStore class="com.briup.server.DBStoreImpl">
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<url>jdbc:oracle:thin:@127.0.0.1:1521:XE</url>
+		<userName>guansl</userName>
+		<userPwd>guansl</userPwd>
+	</dbStore>
+
+</woss>
